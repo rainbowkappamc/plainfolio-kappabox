@@ -2,7 +2,7 @@
 
 :flags: A plain portfolio template for everyone (
 
-[Original Repo By notshanxx] (https://github.com/notshanxx/plainfolio)
+[Original Repo By notshanxx](https://github.com/notshanxx/plainfolio)
 [Live Preview](https://plainfolio.vercel.app/)
 
 <!--
