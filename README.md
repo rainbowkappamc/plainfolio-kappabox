@@ -1,7 +1,8 @@
 # Plainfolio
 
-:flags: A plain portfolio template for everyone
+:flags: A plain portfolio template for everyone (
 
+[Original Repo By notshanxx] (https://github.com/notshanxx/plainfolio)
 [Live Preview](https://plainfolio.vercel.app/)
 
 <!--
