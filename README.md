@@ -38,8 +38,8 @@
 - [Luigi's Mansion Zone](https://youtu.be/6k3Y2pYy0RU?list=PLlX1VfsC0AzxdEgAgvPb2S_eE2kwgu5B5) | Luigi's Mansion Zone | Trivia Beta64 Party Soundtrack, SuperMarioBrosFan116
 - [I Got Banned From Scott Boat (Cashspoon Mix)](https://youtu.be/pfoz2qmDFrg?list=PLlX1VfsC0AzxdEgAgvPb2S_eE2kwgu5B5) | I Got Banned From Scott Boat (Cashspoon Mix) | Trivia Beta64 Party Soundtrack, Cashspoon
 - [I Got Banned From Scott Boat (Whistle Mix)](https://youtu.be/klqGMxXWCCE) | I Got Banned From Scott Boat (Whistle Mix) | RainbowKappa
-- [What a Wonderful World (Cover)](https://youtu.be/9hSHDy44_uo) | What a Wonderful World (Cover) | Trivia Murder Party 2 : The Suncracker0 Mod, Suncracker0
-- [Awards Ceremony](https://youtu.be/3KLAr6yqfsM) | Awards Ceremony | RainbowKappa, Game & Sound
+- [What a Wonderful World (Cover)](https://youtu.be/9hSHDy44_uo) | What a Wonderful World (Cover) | Trivia Murder Party 2 : The Suncracker0 Mod | Suncracker0
+- [Awards Ceremony](https://youtu.be/3KLAr6yqfsM) | Awards Ceremony | Bandy Points | RainbowKappa, Game & Sound
 
 # videos
 - [V5 Release Trailer + Download](https://youtu.be/D11BjdXBTWc) | Trivia Beta64 Party | V5 Release Trailer + Download, RainbowKappa
