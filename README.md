@@ -86,7 +86,7 @@
 
 
 
-### Original Repo Contents
+# Original Repo Contents
 ℹ️ [Original Repo By notshanxx](https://github.com/notshanxx/plainfolio)
 
 ## Plainfolio
