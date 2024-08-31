@@ -16,11 +16,11 @@
 - [Trivia Beta64 Party](http://triviabetaparty.kappabox.live/) | KappaBox LIVE, CNR Team (V5) | 2021-2023 
 - [Scott Boat](http://scottboat.kappabox.live/) | KappaBox LIVE, CNR Team (V2) | 2021-2023 
 - [Trivia Murder Party 2 : The Suncracker0 Mod](http://triviasunparty.kappabox.live/) | RainbowKappa, Drago2143 | 2022
-- [Suncracker Drawn](https://github.com/rainbowkappamc/Suncracker0Jackbox8Mod) | RainbowKappa | 2022
+- [Suncracker Drawn](http://sundrawn.kappabox.live/) | RainbowKappa | 2022
 - [Beta64 Goes On Wipeout (A Cheese Nips Rescue 3 Prototype)](http://bgowo.kappabox.live/) | CNR Team | 2022
 - [Kappabox.LIVE](http://play.kappabox.live/) | RainbowKappa, Main Portfolio Site | 2024
-- [BoyKisserang (April Fools 2024 Mod)](https://github.com/rainbowkappamc/Roomerang_AprilFoolsMod) | RainbowKappa | 2024
-- [Bandy Points](https://github.com/rainbowkappamc/Bandy-Points) | RainbowKappa, KappaBox LIVE | 2024
+- [BoyKisserang (April Fools 2024 Mod)](http://boykisserang.kappabox.live/) | RainbowKappa | 2024
+- [Bandy Points](http://bandypoints.kappabox.live/) | RainbowKappa, KappaBox LIVE | 2024
 
 # types
 - [Beta64 Fan Project](https://beta64.tv/) | A Project Originally Designed for The Beta64 Community.
