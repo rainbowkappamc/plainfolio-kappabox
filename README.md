@@ -19,7 +19,7 @@
 - [Suncracker Drawn](https://github.com/rainbowkappamc/Suncracker0Jackbox8Mod) | RainbowKappa | 2022
 - [Beta64 Goes On Wipeout (A Cheese Nips Rescue 3 Prototype)](http://bgowo.kappabox.live/) | CNR Team | 2022
 - [Kappabox.LIVE](http://play.kappabox.live/) | RainbowKappa, Main Portfolio Site | 2024
-- [BoyKisserang (April Fools 2024 Mod](https://github.com/rainbowkappamc/Roomerang_AprilFoolsMod) | RainbowKappa | 2024
+- [BoyKisserang (April Fools 2024 Mod)](https://github.com/rainbowkappamc/Roomerang_AprilFoolsMod) | RainbowKappa | 2024
 - [Bandy Points](https://github.com/rainbowkappamc/Bandy-Points) | RainbowKappa, KappaBox LIVE | 2024
 
 # types
