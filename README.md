@@ -1,9 +1,98 @@
-# Plainfolio
+# RainbowKappa's Portfolio Site | KappaBox.LIVE
 
-:flags: A plain portfolio template for everyone (
+## Table of Contents
+ℹ️ [Kappabox.LIVE](http://play.kappabox.live/)  
+ℹ️ [Legacy Kappabox.LIVE (Jackbox.TV Web-End Mods)](http://legacy.kappabox.live/)  
+ℹ️ [List of Works](#works)  
+ℹ️ [List of Worktypes](#types)  
+ℹ️ [List of Site Icons](#icons)  
+ℹ️ [List of Site BGM](#bgm)  
+ℹ️ [List of Site Videos](#videos)  
+ℹ️ [List of Project Teams](#teams)  
 
-[Original Repo By notshanxx](https://github.com/notshanxx/plainfolio)
-[Live Preview](https://plainfolio.vercel.app/)
+# works
+- [Legacy Kappabox.LIVE (Jackbox.TV Web-End Mods)](http://legacy.kappabox.live/) | RainbowKappa, KappaBox LIVE, Original KappaBox.LIVE Site | 2021-2024
+- [Wii Music Rii-Arranged (Melodii: A Wii Music Mod)](http://wmra.kappabox.live/) | Wii Music Rii-Arranged Team | 2021-2024
+- [Trivia Beta64 Party](http://triviabetaparty.kappabox.live/) | KappaBox LIVE, CNR Team (V5) | 2021-2023 
+- [Scott Boat](http://scottboat.kappabox.live/) | KappaBox LIVE, CNR Team (V2) | 2021-2023 
+- [Trivia Murder Party 2 : The Suncracker0 Mod](http://triviasunparty.kappabox.live/) | RainbowKappa, Drago2143 | 2022
+- [Suncracker Drawn](http://sundrawn.kappabox.live/) | RainbowKappa | 2022
+- [Beta64 Goes On Wipeout (A Cheese Nips Rescue 3 Prototype)](http://bgowo.kappabox.live/) | CNR Team | 2022
+- [Kappabox.LIVE](http://play.kappabox.live/) | RainbowKappa, Main Portfolio Site | 2024
+- [BoyKisserang (April Fools 2024 Mod)](http://boykisserang.kappabox.live/) | RainbowKappa | 2024
+- [Bandy Points](http://bandypoints.kappabox.live/) | RainbowKappa, Bandy Points Special Thanks and Co. | 2024
+
+# types
+- [Beta64 Fan Project](https://beta64.tv/) | A Project Originally Designed for The Beta64 Community.
+- [Cheese Nips Rescue](https://emcot.world/Cheese_Nips_Rescue) | A Project that is considered by CNR Team as a entry in its' Cheese Nips Rescue series of games. 
+- [Jackbox Modification](https://jackboxgames.com/) | A Project That Modifies One of Jackbox Games' Party Pack Games.
+- [KappaBox LIVE](http://legacy.kappabox.live/) | A Project That Utilizes (Legacy) KappaBox.LIVE's Modified Jackbox Client.
+- [Suncracker0 Fan Project](https://www.twitch.tv/suncracker0) | A Project Originally Designed for The Suncracker0 Community.
+- [Wii Music Modification](https://en.wikipedia.org/wiki/Wii_Music) | A Project That Modifies The 2008, Nintendo Wii Game, Wii Music.
+
+# icons
+- channels4_profile.ico is used as the main portfolio site's icon, which is the current branding for RainbowKappa.
+- a variation of channels4_profile.ico , or the current branding for RainbowKappa, can be seen on the legacy KappaBox.Live without it's background.
+
+# bgm
+- [Luigi's Mansion Zone](https://youtu.be/6k3Y2pYy0RU?list=PLlX1VfsC0AzxdEgAgvPb2S_eE2kwgu5B5) | Luigi's Mansion Zone | Trivia Beta64 Party Soundtrack, SuperMarioBrosFan116
+- [I Got Banned From Scott Boat (Cashspoon Mix)](https://youtu.be/pfoz2qmDFrg?list=PLlX1VfsC0AzxdEgAgvPb2S_eE2kwgu5B5) | I Got Banned From Scott Boat (Cashspoon Mix) | Trivia Beta64 Party Soundtrack, Cashspoon
+- [I Got Banned From Scott Boat (Whistle Mix)](https://youtu.be/klqGMxXWCCE) | I Got Banned From Scott Boat (Whistle Mix), RainbowKappa
+- [What a Wonderful World (Cover)](https://www.youtube.com/watch?v=9hSHDy44_uo&list=PLlX1VfsC0AzzIlgZiSc2k4vp3uR5KRvuZ&index=1) | What a Wonderful World (Cover) | Trivia Murder Party 2 : The Suncracker0 Mod Soundtrack, Suncracker0
+- [Awards Ceremony](https://www.youtube.com/watch?v=3KLAr6yqfsM&list=PLlX1VfsC0Azw5rJA57aqsDwtKNhGIuI1O&index=1) | Awards Ceremony | Bandy Points Soundtrack, RainbowKappa, Game & Sound
+
+# videos
+- [V5 Release Trailer + Download](https://youtu.be/D11BjdXBTWc) | Trivia Beta64 Party | V5 Release Trailer + Download, RainbowKappa
+- [Playtest Session - 7/2/2023](https://www.youtube.com/watch?v=SPKSDPKJn9Y) | Scott Boat | Playtest Session - 7/2/2023, RainbowKappa
+
+# teams
+
+- CNR Team Members:
+  - [Cashspoon](https://www.twitch.tv/Cashspoon)
+  - [RainbowKappa](https://www.twitch.tv/RainbowKappaTTV)
+  - [DizmondTV](https://www.twitch.tv/DizmondTV)
+  - [SuperMarioBrosFan116](https://www.twitch.tv/SuperMarioBrosFan116)
+  - [ScottNoLastName]()
+    
+-  KappaBox LIVE Mod Contributors:
+   - [RainbowKappa](https://www.twitch.tv/RainbowKappaTTV)
+   - [Cashspoon](https://www.twitch.tv/Cashspoon)
+   - [DizmondTV](https://www.twitch.tv/DizmondTV)
+   - [SuperMarioBrosFan116](https://www.twitch.tv/SuperMarioBrosFan116)
+   - [ScottNoLastName]()
+   - [Megazeroex3]()
+   - [Memeguuy]()
+   - [Chips McGee]()
+   - [JJDB210](https://www.twitch.tv/JJDB210)
+   - [HexenHell](https://www.twitch.tv/hexenhell)
+   - [Drago2143](https://drago2143.neocities.org/)
+    
+- Suncracker0 Jackbox Mod Contributors:
+   - [RainbowKappa](https://www.twitch.tv/RainbowKappaTTV)
+   - [Drago2143](https://drago2143.neocities.org/)
+   - [OfficialNoah21](https://twitch.tv/officialnoah21)
+
+- Wii Music Rii-Arranged Team:
+   - [CheckerTheJester]()
+   - [RainbowKappa](https://www.twitch.tv/RainbowKappaTTV)
+   - [Benjamin Halko](https://www.youtube.com/c/benjaminhalko)
+   - [Kozakura]()
+   - [LibraGames](https://www.youtube.com/channel/UCQyh7imI0qIYNzjyLdabS9g)
+   - [Gavin Krolczyk]()
+
+- Bandy Points Special Thanks and Co. :
+  -  [RainbowKappa](https://www.twitch.tv/RainbowKappaTTV)
+  -  [Game & Sound](https://youtu.be/utWA2RNO7zc)
+
+
+
+# Original Repo Contents
+ℹ️ [Original Repo By notshanxx](https://github.com/notshanxx/plainfolio)
+
+## Plainfolio
+:flags: A plain portfolio template for everyone
+
+ℹ️ [Live Preview](https://plainfolio.vercel.app/)
 
 <!--
 <p align="center">
