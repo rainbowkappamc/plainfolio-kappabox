@@ -1,351 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Icon -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Title and Description -->
+    <title>RainbowKappa & KappaBox.Live</title>
+    <meta name="description" content="A place to share projects, including trivia party games and modded experiences.">
+
+    <!-- Icons -->
     <link rel="icon" type="image/x-icon" href="public/asset/images/icon/channels4_profile.ico">
 
-    <!-- Edit meta description for SEO -->
-    <meta
-      name="description"
-      content="a place to share what I do on this world wide web of things."
-    />
-    <!-- Edit title -->
-    <title>RainbowKappa's Small Portfolio-esque Page</title>
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="preload"
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Work+Sans:wght@400;800&display=swap"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Work+Sans:wght@400;800&display=swap">
 
-    <noscript>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Work+Sans:wght@400;800&display=swap"
-        rel="stylesheet"
-        type="text/css"
-      />
-    </noscript>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style-0.css">
 
-    <!-- Styleshits -->
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+    <!-- Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-V1QJVQMYF1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-V1QJVQMYF1');
+    </script>
 
-  <body>
-    <!-- Navigation -->
-    <nav>
-      <ul>
-      </ul>
+    <!-- Styles for Splash Animation and Navigation Bars -->
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* Prevent unnecessary scrolling */
+        }
+
+        body {
+            background-color: #0a1420;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .loader-status {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 50px;
+            height: 50px;
+            margin-top: -25px;
+            margin-left: -25px;
+        }
+
+        .loader-status svg {
+            width: 100%;
+            height: 100%;
+            animation: loader-loading 0.5s alternate infinite ease-in-out;
+        }
+
+        .loader-status p {
+            position: absolute;
+            top: 110%;
+            left: -35px;
+            width: 120px;
+            text-align: center;
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 1.2;
+        }
+
+        .loader-status.error p,
+        .loader-status.error svg {
+            cursor: pointer;
+            color: #f5f7f7;
+            fill: #ce4949;
+            animation: none;
+        }
+
+        @keyframes loader-loading {
+            0% {
+                fill: #1f2937;
+            }
+
+            100% {
+                fill: #353f4d;
+            }
+        }
+
+        /* Dynamic Navigation Bar */
+        #dynamic-nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        #nav-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        #nav-list li {
+            padding: 10px;
+        }
+
+        #nav-list li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+        }
+
+        #nav-list li a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+
+        #switch-iframe-button {
+            background-color: #444;
+            color: white;
+            font-weight: bold;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            margin-left: 20px;
+        }
+
+        #switch-iframe-button:hover {
+            background-color: #575757;
+        }
+
+        /* Bottom Menu Bar for Trivia Game Section */
+        #bottom-menu {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            z-index: 1000;
+            display: none;
+        }
+
+        #bottom-menu ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        #bottom-menu ul li {
+            margin: 0 15px;
+        }
+
+        #bottom-menu ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #bottom-menu ul li a:hover {
+            color: #ddd;
+        }
+
+        /* Trivia Game Container */
+        #TriviaGameSection {
+            height: calc(100% - 50px); /* Adjust to leave space for bottom menu if visible */
+            padding-top: 60px; /* To avoid being overlapped by the top navigation bar */
+        }
+
+        #app {
+            height: 100%;
+            width: 100%;
+        }
+
+        /* Iframe Styling for Jackbox Section */
+        #jackbox-iframe {
+            width: 100%;
+            height: calc(100% - 50px); /* Adjust height to leave space for bottom menu */
+            border: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Dynamic Navigation Bar -->
+    <nav id="dynamic-nav">
+        <ul id="nav-list">
+            <!-- Links will be dynamically inserted here -->
+        </ul>
+        <button id="switch-iframe-button" onclick="switchIframeSource()">Switch to Jackbox.tv</button>
     </nav>
-    <!-- End of Navigation -->
 
-    <!-- Home -->
-    <section class="center">
-
-    <!-- Start of Project -->
-    <section class="center">
-      <div id="project">
-        <h1>RainbowKappa</h1><br />
-        <!-- project container/ grid -->
-        <p class="user-bio">
-          Hello! I'm a 23 year old person who mods really obscure games. <br />
-          Check below for the projects I've done and are potentially working on! <br /> 
-
-        <div class="project-container">
+    <!-- Portfolio Section -->
+    <section id="PortfolioSection" style="display: flex; flex: 1; flex-direction: column; align-items: center; padding-top: 60px;">
+        <div id="project" style="width: 100%; height: 100%; margin: 0; padding: 0;">
+          <iframe 
+            src="https://play.kappabox.live/portfolio.html" 
+            style="width: 100%; height: 100%; border: none;"
+            allowfullscreen>
+          </iframe>
         </div>
-
-        <div id="TriviaBetaParty" class="repository-container more-repo">
-
-        <!-- Trivia Beta64 Party -->
-        <a href="http://triviabetaparty.kappabox.live/"> <img src="public/asset/images/works/triviabetaparty.png" alt="Trivia Beta Party KappaBox Cover"> <br>Trivia Beta64 Party</a><br /> </a>
-        FINAL RELEASE:<a href="https://youtu.be/av9JxhlmNaE?t=3577"> 7/27/2023</a><br /> 
-        <!-- Creators Go here, Typically it would be formally a team name (CNR Team) or just RainbowKappa -->
-	      BY: <a href="https://www.youtube.com/@RainbowKappa">RainbowKappa</a>, <a href="https://www.twitch.tv/cashspoon">CNR Team<br /></a>   
-          <!-- General Description, Typically used in promotional materials of said game -->      
-         <br /> 
-         <blockquote>"It's the first ever Betacon convention, a gaming convention for the famous content creator Beta64! However, the convention turns quickly into a quirky murder game, featuring a number of community members, you'll need to answer community-centric trivia to have a chance of surviving the hands of a new yet oddly familiar host!" </blockquote> <br>
-        
-         <p class="repository-description">
-         <!-- If This Was From A Series or Had Versions Predating It's Final Iteration. List Here as PREVIOUS RELEASES. I.E. Cheese Nips Rescue Games or Trivia Beta Party Versions -->
-          PREVIOUS RELEASE(S):<br />
-          5.0<a href="https://youtu.be/av9JxhlmNaE?t=3575"> - CNR Team Presents: Trivia Beta64 Party</a> (7/27/2023) <br /> </a>
-          4.0<a href="https://youtu.be/xpX7xbFR_xQ?t=3744"> - Beta64's Holiday Special Update</a> (12/22/2022) <br /> </a>
-          3.3<a href="https://youtu.be/t8VGAk7Q4WM?t=2449"> - Big Balls Update</a> (6/30/2022) <br /> </a>
-          2.6<a href="https://youtu.be/0wakhd3KfRo?t=4585"> - December 2021 QOL Update</a> (12/14/2021) <br /> </a>
-          2.1<a href="https://youtu.be/xPwCf7G-4zs?t=6549"> - Christmas 2021</a> (12/1/2021) <br /> </a>
-          1.0<a href="https://youtu.be/xiOI4eGG6k4?t=6438"> - Initial Version</a> (11/17/2021) <br /> </a>
-          <br />
-         A Modification of <a href="https://www.jackboxgames.com/games/trivia-murder-party-2">Jackbox Games' Trivia Murder Party 2</a>  - Inspired by the lore and community of Beta64, featuring overhauled voiceovers, music, trivia, and graphics.
-        <br /></a>
-      <!-- What Kind of Project Is This? -->
-          <Br>
-            Types of Projects:
-      </p>
-      <div class="repository-language-used-container">
-        <a href="https://beta64.tv"><img src="public/asset/images/types/beta64.png" alt="Beta64 Fan Project"> <br>Beta64 Fan Project</a><br /> </a>
-        <a href="https://jackboxgames.com"><img src="public/asset/images/types/jackbox.png" alt="Jackbox Modification"> <br>Jackbox Modification</a><br /> </a>
-        <a href="http://legacy.kappabox.live"><img src="public/asset/images/types/kappabox.png" alt="KappaBox Project"> <br>KappaBox LIVE</a><br /> </a>
-
-      </div>
-          
-        </div>
-        <div id="ScottBoat" class="repository-container more-repo">
-        <!-- Scott Boat -->
-        <a href="http://scottboat.kappabox.live/"> <img src="public/asset/images/works/scottboat.png" alt="Scott Boat KappaBox Cover"> <br>Scott Boat</a><br /> </a>
-        FINAL RELEASE:<a href="https://youtu.be/av9JxhlmNaE?t=3577"> 7/27/2023</a><br /> 
-        <!-- Creators Go here, Typically it would be formally a team name (CNR Team) or just RainbowKappa -->
-	      BY: <a href="https://www.youtube.com/@RainbowKappa">RainbowKappa</a>, <a href="https://www.twitch.tv/cashspoon">CNR Team<br /></a>   
-          <!-- General Description, Typically used in promotional materials of said game -->      
-         <br /> 
-         <blockquote>"Hey All, Scott Here! In this modded version of Joke Boat, you and the crew will perform quick-witted comedy, as your luncheon at a local Bojangles turns into comedic chaos." </blockquote> <br>
-        
-         <p class="repository-description">
-         <!-- If This Was From A Series or Had Versions Predating It's Final Iteration. List Here as PREVIOUS RELEASES. I.E. Cheese Nips Rescue Games or Trivia Beta Party Versions -->
-          PREVIOUS RELEASE(S):<br />
-          2.0<a href="https://youtu.be/av9JxhlmNaE?t=3577"> - Scott Boat V2</a> (7/27/2023) <br /> </a>
-          1.0<a href="https://youtu.be/0wakhd3KfRo?t=7005"> - Initial Version</a> (12/14/2021) <br /> </a>
-
-          <br />
-          A Modification of  <a href="https://www.jackboxgames.com/games/joke-boat">Jackbox Games' Joke Boat </a>for the<a href="https://beta64.tv"> Beta64 </a>Community.<br>
-          Also References The <a href="https://www.youtube.com/c/scottthewoz"> Scott The Woz </a>Community.<br>
-          <!-- What Kind of Project Is This? -->
-          <Br>
-            Types of Projects:
-      </p>
-      <div class="repository-language-used-container">
-        <a href="https://beta64.tv"><img src="public/asset/images/types/beta64.png" alt="Beta64 Fan Project"> <br>Beta64 Fan Project</a><br /> </a>
-        <a href="https://jackboxgames.com"><img src="public/asset/images/types/jackbox.png" alt="Jackbox Modification"> <br>Jackbox Modification</a><br /> </a>
-        <a href="http://legacy.kappabox.live"><img src="public/asset/images/types/kappabox.png" alt="KappaBox Project"> <br>KappaBox LIVE</a><br /> </a>
-
-      </div>
-          
-        </div>
-        <div id="BGOWO" class="repository-container more-repo">
-        <!-- Beta64 goes on Wipeout -->
-        <a href="http://bgowo.kappabox.live/"> <img src="public/asset/images/works/wipeout.png" alt="Beta64 Goes On Wipeout KappaBox Cover"> <br>Beta64 goes on Wipeout</a><br /> </a>
-         PROTOTYPE RELEASE:<a href="https://youtu.be/Qo9c4gJcPrA"> 6/1/2022<br /></a>
-        <!-- Creators Go here, Typically it would be formally a team name (CNR Team) or just RainbowKappa -->
-         BY: <a href="https://www.twitch.tv/cashspoon">CNR Team<br /></a>
-        <!-- General Description, Typically used in promotional materials of said game -->
-         <br /> 
-         <blockquote>"An ordinary dinner party spirals out of control into TV's number one family friendly game show. Oh and a court case." </blockquote> <br>
-        
-         <p class="repository-description">
-         <!-- If This Was From A Series or Had Versions Predating It's Final Iteration. List Here as PREVIOUS RELEASES. I.E. Cheese Nips Rescue Games or Trivia Beta Party Versions -->
-        PREVIOUS RELEASE(S):<br />
-        <a href="https://youtu.be/Qo9c4gJcPrA"> Beta64 goes on Wipeout </a>(6/1/2022)<br /> </a>
-        <a href="https://youtu.be/Km4urrMXjh0?t=6557"> Beta64 goes to Costco </a>(4/1/2021)<br /> </a>
-        <a href="https://www.youtube.com/watch?v=ENEqT--z7b4"> Beta64's Cheese Nips Rescue 2 </a> (12/21/2020)<br /> </a>
-        <a href="https://www.youtube.com/watch?v=edhLa8v8ySY"> Beta64's Cheese Nips Rescue </a> 
-        (5/25/2020)<br /> </a>
-        <br />
-        The Second Prototype for Cheese Nips Rescue 3, The Third and In-Development Entry of A Beta64 Fangame Series For <a href="https://www.playstation.com/en-us/games/dreams/"
-        >Dreams on Playstation 4 and 5 Systems.<br /></a>
-        <br />
-        Also Debuted <b>CNR Team</b> With <a href="https://indreams.me/ConeCapitalist">Cashspoon</a>, <a href="https://indreams.me/rainbowkappattv">RainbowKappa</a>, and <a href="https://indreams.me/DizmondTV">DizmondTV</a>.
-        <br>
-      <!-- What Kind of Project Is This? -->
-      <Br>
-        Types of Projects:
-  </p>
-  <div class="repository-language-used-container">
-    <a href="https://beta64.tv"><img src="public/asset/images/types/beta64.png" alt="Beta64 Fan Project"> <br>Beta64 Fan Project</a><br /> </a>
-    <a href="https://emcot.world/Cheese_Nips_Rescue"><img src="public/asset/images/types/cnr.png" alt="Game In The CNR Series"> <br>Cheese Nips Rescue</a><br /> </a>
-
-      </div>
-    </div>
-    <div id="WiiMusicRiiArranged" class="repository-container more-repo">
-    <!-- Wii Music Rii-Arranged -->
-    <a href="http://wmra.kappabox.live/"> <img src="public/asset/images/works/riiarranged.png" alt="Wii Music: Rii-Arranged KappaBox Cover"> <br>Wii Music: Rii-Arranged</a><br /> </a>
-     1.0 RELEASE:<a href="https://youtu.be/Wlpoy715AEU"> 4/2/2024<br /></a>
-    <!-- Creators Go here, Typically it would be formally a team name (CNR Team) or just RainbowKappa -->
-     BY: <a href="http://wmra.kappabox.live/">Wii Music Rii-Arranged Team<br /></a>
-    <!-- General Description, Typically used in promotional materials of said game -->
-     <br /> 
-     <blockquote>"Wii Music: Rii-Arranged is a Wii Music Modification for the 2008 Wii Game "Wii Music" , This mod adds new songs, new tutes, and new ways to jam out alone or with friends! Wii Music is back and better than it ever was!" </blockquote> <br>
-
-     <p class="repository-description">
-     <!-- If This Was From A Series or Had Versions Predating It's Final Iteration. List Here as PREVIOUS RELEASES. I.E. Cheese Nips Rescue Games or Trivia Beta Party Versions -->
-    PREVIOUS RELEASE(S):<br />
-    <a href="https://youtu.be/Wlpoy715AEU"> Wii Music: Rii-Arranged - 1.0 Release </a>(4/2/2024)<br /> </a>
-    <a href="https://youtu.be/XLxTNzZI7WY?si=eOc8noqBqoD9TTfB"> Wii Music: Rii-Arranged - Beta64 Demo Build</a> (9/2/2022)<br /> </a>
-    <a href="https://youtu.be/vRSo48daZg4?t=2793"> Melodii : A Wii Music Mod - A Beta64 Mod Showcase Build</a> (8/12/2021)<br /> </a>
-    <a href="https://www.youtube.com/watch?v=edhLa8v8ySY"> Melodii : A Wii Music Mod - Demo </a> (5/23/2021)<br /> </a>
-    <br />
-    A Modification of the 2008 Wii Game,<a href="https://en.wikipedia.org/wiki/Wii_Music "> Wii Music</a>,
-    designed to add new content such as music and other miscellaneous additions.<br /></a>
-  <!-- What Kind of Project Is This? -->
-  <Br>
-    Types of Projects:
-</p>
-<div class="repository-language-used-container">
-<a href="https://en.wikipedia.org/wiki/Wii_Music"><img src="public/asset/images/types/wiimusic.png" alt="Beta64 Fan Project"> <br>Wii Music Modification</a><br /> </a>
-
-  </div>
-          
-        </div>
-        <div id="Suncracker0TMP2Mod" class="repository-container more-repo">
-
-          <!-- Suncracker0 Trivia Murder Party 2 Mod -->
-          <a href="http://triviasunparty.kappabox.live/"> <img src="public/asset/images/works/TMP2Suncracker0.png" alt="TMP2SuncrackerMod KappaBox Cover"> <br>Trivia Murder Party 2 : The Suncracker0 Mod</a><br /> </a>
-          FINAL RELEASE:<a href="http://triviasunparty.kappabox.live/"> 10/17/2022</a><br /> 
-          <!-- Creators Go here, Typically it would be formally a team name (CNR Team) or just RainbowKappa -->
-          BY: <a href="https://www.youtube.com/@RainbowKappa">RainbowKappa</a>, <a href="https://www.youtube.com/channel/UC3Hn_HgWwfCX5nsUNtC8ltg">Drago2143<br /></a>   
-            <!-- General Description, Typically used in promotional materials of said game -->      
-           <br /> 
-           <blockquote>"A normal, everyday, just chatting stream goes off the rails when two viewers kidnap  <a href="https://www.twitch.tv/suncracker0">Suncracker0 and his chat</a>! Anwser Suncracker0 and Internet-centric Trivia as you try to survive once again in this modded take of <a href="https://www.jackboxgames.com/games/trivia-murder-party-2">Trivia Murder Party 2</a>!" </blockquote> <br>
-        
-           <p class="repository-description">
-           <!-- If This Was From A Series or Had Versions Predating It's Final Iteration. List Here as PREVIOUS RELEASES. I.E. Cheese Nips Rescue Games or Trivia Beta Party Versions -->
-            PREVIOUS RELEASE(S):<br />
-            6.0<a href="https://github.com/rainbowkappamc/TMP2SuncrackerMod/releases/tag/v6"> - One Year Anniversary Update</a> (10/17/2022) <br /> </a>
-            5.0<a href="https://github.com/rainbowkappamc/TMP2SuncrackerMod/releases/tag/v5.00"> - Summer 2022 Update</a> (6/17/2022) <br /> </a>
-            4.0<a href="https://github.com/rainbowkappamc/TMP2SuncrackerMod/releases/tag/v4.2069"> - Spring 2022 Update</a> (3/30/2022) <br /> </a>
-            3.0<a href="https://github.com/rainbowkappamc/TMP2SuncrackerMod/releases/tag/v3"> - January 2022 Update</a> (1/27/2022) <br /> </a>
-            2.0<a href="https://github.com/rainbowkappamc/TMP2SuncrackerMod/releases/tag/2.0"> - Christmas 2021 Update</a> (12/16/2021) <br /> </a>
-            1.15<a href="https://github.com/rainbowkappamc/TMP2SuncrackerMod/releases/tag/v1.15"> - Thanksgiving 2021 Update</a> (11/22/2021) <br /> </a>
-            0.15<a href="https://github.com/rainbowkappamc/TMP2SuncrackerMod/releases/tag/v0.15"> - Initial Version</a> (10/12/2021) <br /> </a>
-            <br />
-           A Jackbox Party Pack 6 Modification for <a href="https://www.jackboxgames.com/games/trivia-murder-party-2">Trivia Murder Party 2</a> based around <a href="https://www.twitch.tv/suncracker0">Suncracker0's Community</a>.
-          <br /></a>
-        <!-- What Kind of Project Is This? -->
-            <Br>
-              Types of Projects:
-        </p>
-        <div class="repository-language-used-container">
-          <a href="https://www.twitch.tv/suncracker0"><img src="public/asset/images/types/suncracker0.png" alt="Suncracker0 Fan Project"> <br>Suncracker0 Fan Project</a><br /> </a>
-          <a href="https://jackboxgames.com"><img src="public/asset/images/types/jackbox.png" alt="Jackbox Modification"> <br>Jackbox Modification</a><br /> </a>  
-        </div>
-            
-          </div> 
-          <div id="BandyPoints" class="repository-container more-repo">
-
-            <!-- Bandy Points Mod -->
-            <a href="http://bandypoints.kappabox.live/"> <img src="public/asset/images/works/bandypoints.png" alt="Bandy Points KappaBox Cover"> <br>Bandy Points</a><br /> </a>
-            1.0 RELEASE:<a href="http://bandypoints.kappabox.live/"> 8/31/2024</a><br /> 
-            <!-- Creators Go here, Typically it would be formally a team name (CNR Team) or just RainbowKappa -->
-            BY: <a href="https://www.youtube.com/@RainbowKappa">RainbowKappa</a><br /></a>   
-            <!-- General Description, Typically used in promotional materials of said game -->      
-             <br /> 
-             <blockquote>"Greetings from Bandy Co! Talk through a modified version of Talking Points featuring the comedy from the clone himself, Bandrew! Designed with Bandrew from The Cheese Nips Rescue Games and The Lore and Humors of CNR Team in mind, Manage to pursuade your friends of your totally Bandy Co. approved talking skills!" </blockquote> <br>
-                       
-             <p class="repository-description">
-             <!-- If This Was From A Series or Had Versions Predating It's Final Iteration. List Here as PREVIOUS RELEASES. I.E. Cheese Nips Rescue Games or Trivia Beta Party Versions -->
-              PREVIOUS RELEASE(S):<br />
-              1.0<a href="http://bandypoints.kappabox.live/"> - Bandy Points Initial Version</a> (8/31/2024) <br /> </a>
-    
-              <br />
-            A Modification of <a href="https://www.jackboxgames.com/games/talking-points">Jackbox Games' Talking Points</a>  - Inspired and Designed for the lore surrounding Bandrew and The CNR Team Development Community.
-            <br /></a>
-          <!-- What Kind of Project Is This? -->
-              <Br>
-                Types of Projects:
-          </p>
-          <div class="repository-language-used-container">
-            <a href="https://jackboxgames.com"><img src="public/asset/images/types/jackbox.png" alt="Jackbox Modification"> <br>Jackbox Modification</a><br /> </a>  
-            <a href="http://legacy.kappabox.live"><img src="public/asset/images/types/kappabox.png" alt="KappaBox Project"> <br>KappaBox LIVE</a><br /> </a>
-    
-          </div>
-              
-            </div> 
-            
-            <div id="BoyKisserang" class="repository-container more-repo">
-
-              <!-- BoyKisserang -->
-              <a href="http://boykisserang.kappabox.live/"> <img src="public/asset/images/works/boykisserang.png" alt="BoyKisserang KappaBox Cover"> <br>BoyKisserang</a><br /> </a>
-              1.0 RELEASE:<a href="http://boykisserang.kappabox.live/"> 3/11/2024</a><br /> 
-              <!-- Creators Go here, Typically it would be formally a team name (CNR Team) or just RainbowKappa -->
-              BY: <a href="https://www.youtube.com/@RainbowKappa">RainbowKappa</a><br /></a>   
-                <!-- General Description, Typically used in promotional materials of said game -->      
-               <br /> 
-               <blockquote>"You get a invite to a all new reality television show for fame and prizes! ... there's only one catch, It's April Fools and you're forced to go undercover as a boykisser... you hopefully don't have to kiss others in this modified version of Roomerang originally made for April Fools 2024." </blockquote> <br>
-              
-               <p class="repository-description">
-               <!-- If This Was From A Series or Had Versions Predating It's Final Iteration. List Here as PREVIOUS RELEASES. I.E. Cheese Nips Rescue Games or Trivia Beta Party Versions -->
-                PREVIOUS RELEASE(S):<br />
-                1.0<a href="http://boykisserang.kappabox.live/"> - BoyKisserang Initial Version</a> (3/11/2024) <br /> </a>
+      </section>
       
-                <br />
-                A Modification of <a href="https://www.jackboxgames.com/games/roomerang">Jackbox Games' Roomerang</a> - a April Fools joke mod experience originally designed for the unofficial Jackbox Games Community Discord in mind.
-              <br /></a>
-            <!-- What Kind of Project Is This? -->
-                <Br>
-                  Types of Projects:
-            </p>
-            <div class="repository-language-used-container">
-              <a href="https://jackboxgames.com"><img src="public/asset/images/types/jackbox.png" alt="Jackbox Modification"> <br>Jackbox Modification</a><br /> </a>  
-              <a href="http://legacy.kappabox.live"><img src="public/asset/images/types/kappabox.png" alt="KappaBox Project"> <br>KappaBox LIVE</a><br /> </a>
-      
-            </div>
-            </div> 
-        <!-- Likely Not Ideal Way To Space Sections -->
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />      
-              <!-- Background Music -->
-              <div id="BGM" class="repository-container more-repo">
-                Background Music <br>
-                <br>
-               I Got Banned From Scott Boat (Bandy Points Mix) (Full) - <a href="http://bandypoints.kappabox.live/">Bandy Points<br></a>
-                <a href="https://www.youtube.com/@RainbowKappa">RainbowKappa</a>,  <a href="https://www.twitch.tv/cashspoon">Cashspoon</a>, <a href="https://youtu.be/utWA2RNO7zc">Game & Sound</a>                <br /> 
-                <br /> 
-                <br />        
-                <audio src="public/asset/bgm/scottboatbandypointsmix.mp3" autoplay controls loop>
-                  Error: Unfortunately Your Web Browser Does Not Support Audio Playback!
-                  </audio>
-                  <br /> 
-              </div>
-              <!-- Background Video -->
-              <div class="repository-container more-repo">
-                Background Video <br>
-                <br>
-                </a>Trivia Beta Party | V5 Release Trailer + Download - <a href="https://triviabetaparty.kappabox.live/">Trivia Beta64 Party<br></a>
-                <a href="https://www.youtube.com/@RainbowKappa">RainbowKappa</a>                <br /> 
-                </html>
-                <video id="background-video" autoplay muted loop>
-                  <source src="public/asset/video/triviabetapartyv5.mp4" type="video/mp4">
-                </video>
-                  <br /> 
-              </div>
-              <!-- Background Video -->
-               <br>
-              <!--Misc Site Info For My Reference -->
-              <!--Whenever Pushing A Update, Update The Ver To Current Date -->
-              Site Ver. 9/18/2024 <BR>
-              <a href="http://kappabox.live/">KappaBox.LIVE<br></a>
-              <br>              
-              <!--CNR Team (Main Team , Not Assistants) For Reference -->
-              <a href="#BGOWO">CNR Team Members</a>: Cashspoon, RainbowKappa, DizmondTV, SuperMarioBrosFan116, ScottNoLastName <br><br>
-              <!--Contributors During The Development of Trivia Beta Party (and/or Scott Boat) -->
-              <a href="#TriviaBetaParty">KappaBox LIVE Mod Contributors</a>: RainbowKappa, Cashspoon, SuperMarioBrosFan116, DizmondTV, ScottNoLastName, Megazeroex3, Memeguuy, Chips McGee, JJDB210, HexenHell, Drago2143 <br><br>
-              <!--Contributors During The Development of The Suncracker0 Trivia Murder Party 2 Mod (and/or The Suncracker0 Weapons Drawn Mod) -->
-              <a href="#Suncracker0TMP2Mod">Suncracker0 Jackbox Mod Contributors</a>: RainbowKappa, Drago2143, OfficialNoah21 <br><br>
-              <!--Wii Music Modding Team for Melodii/Wii Music Rii-Arranged -->
-              <a href="#WiiMusicRiiArranged">Wii Music Rii-Arranged Team</a>: CheckerTheJester, RainbowKappa, Benjamin Halko, Kozakura, LibraGames, Gavin Krolczyk <br><br>
-               <!--Contributors During The Development of Specifically Bandy Points --> 
-              <a href="#BandyCo">Bandy Points Special Thanks and Co. </a>: RainbowKappa, Game & Sound <br><br>
-               <!-- Game & Sound Arrangement Credit, Not Direct Contribution -->
-              <!-- To Projects End-->
-      </div>
+    <!-- End of Portfolio Section -->
+
+    <!-- Trivia Game Section (Using Iframe, Initially Hidden) -->
+    <section id="TriviaGameSection" style="display:none;">
+        <iframe id="jackbox-iframe" src="https://kappabox.camelskin.zip/"></iframe>
     </section>
-    <!-- End of Project -->
-    <!-- <h1 id="fin" style="
-        font-family: 'Work Sans', sans-serif;
-        font-size: 20px;
-        margin: 100vh 0 50vh 0;
-      ">
-      <i>~ fin ~</i>
-    </h1> -->
-    <!-- remove if you want to remove hover effect -->
-    <script type="module" src="./script/event-effect.js"></script>
-  </body>
 
+    <!-- Bottom Menu Bar for Trivia Game Section -->
+    <div id="bottom-menu">
+        <ul>
+            <li><a href="https://github.com/rainbowkappamc/jackboxbeta64" target="_blank">Mod GitHub</a></li>
+            <li><a href="https://github.com/rainbowkappamc/kappabox-live" target="_blank">Site GitHub</a></li>
+        </ul>
+    </div>
+
+    <!-- Scripts -->
+    <script type="module" src="./script/event-effect.js"></script>
+    <script>
+        let currentIframeSource = 'kappabox';
+
+        // Show Portfolio Section
+        function showPortfolio() {
+            document.getElementById('PortfolioSection').style.display = 'flex';
+            document.getElementById('TriviaGameSection').style.display = 'none';
+            document.getElementById('bottom-menu').style.display = 'none'; // Hide bottom menu
+        }
+
+        // Show Trivia Game Section
+        function showTriviaGame() {
+            document.getElementById('PortfolioSection').style.display = 'none';
+            document.getElementById('TriviaGameSection').style.display = 'block';
+            document.getElementById('bottom-menu').style.display = 'block'; // Show bottom menu
+        }
+
+        // Switch iframe source between kappabox.camelskin.zip and jackbox.tv
+        function switchIframeSource() {
+            const iframe = document.getElementById('jackbox-iframe');
+            const button = document.getElementById('switch-iframe-button');
+
+            if (currentIframeSource === 'kappabox') {
+                iframe.src = 'https://jackbox.tv/';
+                button.innerText = 'Switch to KappaBox';
+                currentIframeSource = 'jackbox';
+            } else {
+                iframe.src = 'https://kappabox.camelskin.zip/';
+                button.innerText = 'Switch to Jackbox.tv';
+                currentIframeSource = 'kappabox';
+            }
+        }
+
+        // Initially, show the portfolio section
+        showPortfolio();
+
+        // Add dynamic navigation links for all sections
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const navList = document.getElementById('nav-list');
+
+            sections.forEach(section => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                a.href = `#${section.id}`;
+                a.innerText = section.id.replace('Section', '').replace(/([A-Z])/g, ' $1').trim();
+                a.onclick = function () {
+                    if (section.id === 'TriviaGameSection') {
+                        showTriviaGame();
+                    } else {
+                        showPortfolio();
+                    }
+                };
+                li.appendChild(a);
+                navList.appendChild(li);
+            });
+        });
+    </script>
+</body>
+
+</html>
