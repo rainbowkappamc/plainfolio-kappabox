@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <!-- Title and Description -->
-    <title>RainbowKappa & KappaBox.Live</title>
+    <title>RainbowKappa's Epic Portfolio Gamer Site</title>
     <meta name="description" content="A place to share projects, including trivia party games and modded experiences.">
 
     <!-- Icons -->
@@ -181,7 +181,7 @@
         }
 
         /* Trivia Game Container */
-        #TriviaGameSection {
+        #JackboxClient {
             height: calc(100% - 50px); /* Adjust to leave space for bottom menu if visible */
             padding-top: 60px; /* To avoid being overlapped by the top navigation bar */
         }
@@ -224,7 +224,7 @@
     <!-- End of Portfolio Section -->
 
     <!-- Trivia Game Section (Using Iframe, Initially Hidden) -->
-    <section id="TriviaGameSection" style="display:none;">
+    <section id="JackboxClient" style="display:none;">
         <iframe id="jackbox-iframe" src="https://kappabox.camelskin.zip/"></iframe>
     </section>
 
@@ -244,14 +244,14 @@
         // Show Portfolio Section
         function showPortfolio() {
             document.getElementById('PortfolioSection').style.display = 'flex';
-            document.getElementById('TriviaGameSection').style.display = 'none';
+            document.getElementById('JackboxClient').style.display = 'none';
             document.getElementById('bottom-menu').style.display = 'none'; // Hide bottom menu
         }
 
         // Show Trivia Game Section
         function showTriviaGame() {
             document.getElementById('PortfolioSection').style.display = 'none';
-            document.getElementById('TriviaGameSection').style.display = 'block';
+            document.getElementById('JackboxClient').style.display = 'block';
             document.getElementById('bottom-menu').style.display = 'block'; // Show bottom menu
         }
 
@@ -285,7 +285,7 @@
                 a.href = `#${section.id}`;
                 a.innerText = section.id.replace('Section', '').replace(/([A-Z])/g, ' $1').trim();
                 a.onclick = function () {
-                    if (section.id === 'TriviaGameSection') {
+                    if (section.id === 'JackboxClient') {
                         showTriviaGame();
                     } else {
                         showPortfolio();
