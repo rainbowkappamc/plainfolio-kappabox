@@ -27,7 +27,7 @@
 - [Cheese Nips Rescue](https://emcot.world/Cheese_Nips_Rescue) | A Project that is considered by CNR Team as a entry in its' Cheese Nips Rescue series of games. 
 - [Jackbox Modification](https://jackboxgames.com/) | A Project That Modifies One of Jackbox Games' Party Pack Games.
 - [KappaBox LIVE](http://legacy.kappabox.live/) | A Project That Utilizes (Legacy) KappaBox.LIVE's Modified Jackbox Client.
-- [Suncracker0 Fan Project](https://www.twitch.tv/suncracker0) | A Project Originally Designed for The Suncracker0 Community.
+- [Suncracker0 Fan Project](https://www.twitch.tv/sunsoldout) | A Project Originally Designed for The Suncracker0 Community.
 - [Wii Music Modification](https://en.wikipedia.org/wiki/Wii_Music) | A Project That Modifies The 2008, Nintendo Wii Game, Wii Music.
 
 # icons
