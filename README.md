@@ -39,7 +39,7 @@
 - [I Got Banned From Scott Boat (Cashspoon Mix)](https://youtu.be/pfoz2qmDFrg?list=PLlX1VfsC0AzxdEgAgvPb2S_eE2kwgu5B5) | I Got Banned From Scott Boat (Cashspoon Mix) | Trivia Beta64 Party Soundtrack, Cashspoon
 - [I Got Banned From Scott Boat (Whistle Mix)](https://youtu.be/klqGMxXWCCE) | I Got Banned From Scott Boat (Whistle Mix), RainbowKappa
 - [What a Wonderful World (Cover)](https://www.youtube.com/watch?v=9hSHDy44_uo&list=PLlX1VfsC0AzzIlgZiSc2k4vp3uR5KRvuZ&index=1) | What a Wonderful World (Cover) | Trivia Murder Party 2 : The Suncracker0 Mod Soundtrack, Suncracker0
-- [Awards Ceremony](https://www.youtube.com/watch?v=3KLAr6yqfsM&list=PLlX1VfsC0Azw5rJA57aqsDwtKNhGIuI1O&index=1) | Awards Ceremony | Bandy Points Soundtrack, RainbowKappa, Game & Sound
+- [(UNUSED) old_mod_final.wav](https://youtu.be/6k3Y2pYy0RU?list=PLlX1VfsC0AzxdEgAgvPb2S_eE2kwgu5B5) | (UNUSED) old_mod_final.wav | Trivia Beta64 Party Soundtrack, RainbowKappa
 
 # videos
 - [V5 Release Trailer + Download](https://youtu.be/D11BjdXBTWc) | Trivia Beta64 Party | V5 Release Trailer + Download, RainbowKappa
@@ -79,11 +79,6 @@
    - [Kozakura]()
    - [LibraGames](https://www.youtube.com/channel/UCQyh7imI0qIYNzjyLdabS9g)
    - [Gavin Krolczyk]()
-
-- Bandy Points Special Thanks and Co. :
-  -  [RainbowKappa](https://www.twitch.tv/RainbowKappaTTV)
-  -  [Game & Sound](https://youtu.be/utWA2RNO7zc)
-
 
 
 # Original Repo Contents
