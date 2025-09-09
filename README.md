@@ -77,7 +77,7 @@
    - [RainbowKappa](https://www.twitch.tv/RainbowKappaTTV)
    - [Benjamin Halko](https://www.youtube.com/c/benjaminhalko)
    - [Kozakura]()
-   - [LibraGames](https://www.youtube.com/channel/UCQyh7imI0qIYNzjyLdabS9g)
+   - [LibraGames]()
    - [Gavin Krolczyk]()
 
 
@@ -523,3 +523,4 @@ To remove the hover effect. Go to `index.html` and find this `<script>` tag and 
 ```html
 <script type="module" src="./script/event-effect.js"></script>
 ```
+
